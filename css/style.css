@@ -28,6 +28,7 @@ font-family: 'Russo One', sans-serif;
 
 *{
     margin: 0;
+    padding: 0;
 }
 
 /*comentario*/
@@ -80,15 +81,16 @@ header  {
     background-color: rgb(27, 27, 29);
     padding: 20px;
     display: flex;
-    justify-content: space-around;
-    color: aliceblue;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .content-oscuro {
     background-color: rgb(27, 27, 29);
     color: white;
     text-align: center;
+    padding-bottom: 40px ;
+    justify-items: center;
 
 }
 
@@ -98,8 +100,6 @@ header  {
     background-image: url(../images/logo\ gytesas\ B.png);
     background-size: contain;
     background-repeat: no-repeat;
-
-
 }
 
 .banner-carrusel {
