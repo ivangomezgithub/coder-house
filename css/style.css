@@ -110,6 +110,50 @@ header  {
     background-size: cover;
 }
 
+.testi {
+    background-color: #131414;
+}
+
+.testotesti {
+    color: white;
+}
+
+
+#fototesti {
+    background-image: url(../images/tecnico3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width:480px){
+    .testi {
+        display: block;
+    }
+
+    .textotesti{
+        color: white;
+        padding: 24px;
+    }
+
+    #fototesti {
+        height: 50vh;
+    }
+
+}
+
+@media (min-width:600px){
+    .testi {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .textotesti{
+        color: white;
+        padding: 48px;
+    }
+}
+
 .titulo-2 {
     font-family: 'Russo One', sans-serif;
     padding: 24px 0 24px;
@@ -170,6 +214,7 @@ header  {
 .titulo-testimonio {
     font-family: 'Russo One', sans-serif;
     color: rgb(165, 195, 221);
+    font-size: 2rem;
     
 }
 
@@ -187,6 +232,39 @@ header  {
     text-align: center;
 
 }
+
+.fotopersona {
+    background-image: url(../images/persona.jpg );
+    background-size: cover;
+    width: 20vw;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fotopersona2 {
+    background-image: url(../images/persona2.jpg );
+    background-size: cover;
+    width: 20vw;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fotopersona3 {
+    background-image: url(../images/persona3.jpg );
+    background-size: cover;
+    width: 20vw;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
 .portada-acercade {
     background-image: url(../images/supervisor.jpg);
     background-repeat: no-repeat;
