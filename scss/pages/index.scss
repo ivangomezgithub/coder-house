@@ -1,0 +1,17 @@
+/**PORTADA-index**/
+.portada-index {
+    background-image: url(../images/soldando.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+/**banner logo Horizontal**/
+
+.banner-logo {
+    background-color: $negro;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

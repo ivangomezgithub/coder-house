@@ -1,62 +1,17 @@
-/**
-#logo {
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
-    background-image: url(../images/circulo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+@import "./base";
+@import "./pages/index.scss";
 
+ul {
+    .ol {
+        list-style-type: none;
+    }
 }
 
-
-**/ 
-
-/** fuentes
-
-font-family: 'Allerta Stencil', sans-serif;
-font-family: 'Anton', sans-serif;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Julius Sans One', sans-serif;
-font-family: 'Mitr', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Paytone One', sans-serif;
-font-family: 'Rubik Mono One', sans-serif;
-font-family: 'Russo One', sans-serif;
-
-**/
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-/**comentario **/
-
-a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-a:hover {
-    color: #172a36;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #525252;
-    text-decoration: none;
-}
-
-ul.ol {
-    list-style-type: none;
-}
+/**Header**/
 
 header  {
     color: white;
-    background-color: rgba(0, 0, 0, 0.753);
+    background-color: $negropacity;
      justify-content: center;
      align-items: center;
      flex-wrap: wrap;
@@ -71,33 +26,16 @@ header  {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+
+    li {
+        padding: 10px;
+    }
+
 }
 
-.nav-list li {
-    padding: 10px;
-}
-
-
-/**PORTADA**/
-.portada-index {
-    background-image: url(../images/soldando.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 600px;
-}
-
-/**banner logo**/
-
-.banner-logo {
-    background-color: rgb(27, 27, 29);
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .content-oscuro {
-    background-color: rgb(27, 27, 29);
+    background-color: $principal;
     color: white;
     text-align: center;
     padding-bottom: 40px ;
@@ -121,8 +59,11 @@ header  {
     background-size: cover;
 }
 
+
+/**testimonios pagina index**/
+
 .testi {
-    background-color: #131414;
+    background-color:$secundary;
 }
 
 .textotesti {
@@ -166,9 +107,17 @@ header  {
     }
 }
 
+
 .titulo-2 {
     font-family: 'Russo One', sans-serif;
     padding: 24px 0 24px;
+    font-size: 3rem;
+}
+
+@media (max-width:600px){
+    .titulo-2 {
+    font-size: 1rem;
+    }
 }
 
 .servicios {
@@ -401,4 +350,3 @@ header  {
 
 }
 
-**/

@@ -1,0 +1,33 @@
+/**Gama de colores**/
+
+$principal: #363A3E;
+$secundary: #59626A;
+$tertiary: #98A3AD;
+
+$negro: #000000;
+
+$negropacity: rgba(0, 0, 0, 0.753);
+
+
+/**Ajusates Globales**/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        color:white;
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: $secundary;
+        text-decoration: none;
+
+    }
+}
