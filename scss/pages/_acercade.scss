@@ -1,0 +1,17 @@
+.portada-acercade {
+    background-image: url(../images/supervisor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 500PX;
+}
+
+.cont-acercade{
+    background-color: #363A3E;  
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;    
+}

@@ -1,17 +1,308 @@
-/* Error: Undefined variable.
- *    ,
- * 13 |     background-color: $negropacity;
- *    |                       ^^^^^^^^^^^^
- *    '
- *   scss\main.scss 13:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 13 \2502      background-color: $negropacity;\d\a    \2502                        ^^^^^^^^^^^^\a    \2575 \a   scss\\main.scss 13:23  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: #59626A;
+  text-decoration: none;
+}
+
+ul .ol {
+  list-style-type: none;
+}
+
+header {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.753);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  position: fixed;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.nav-list li {
+  padding: 10px;
+}
+
+.content-oscuro {
+  background-color: #363A3E;
+  color: white;
+  text-align: center;
+  padding-bottom: 40px;
+  justify-items: center;
+}
+
+.titulo-2 {
+  font-family: "Russo One", sans-serif;
+  padding: 24px 0 24px;
+  font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+  .titulo-2 {
+    font-size: 1rem;
+  }
+}
+/**PORTADA**/
+.portada-index {
+  background-image: url(../images/soldando.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+
+/**banner logo**/
+.banner-logo {
+  background-color: #000000;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-horizontal {
+  width: 250px;
+  height: 50px;
+  background-image: url(../images/logo\ gytesas\ B.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.banner-carrusel {
+  height: 800px;
+  background-image: url(../images/tecnico.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testi {
+  background-color: #131414;
+}
+
+.textotesti {
+  color: white;
+}
+
+.titulo-testimonio {
+  font-family: "Russo One", sans-serif;
+  color: rgb(165, 195, 221);
+  font-size: 2rem;
+}
+
+.testimonio {
+  color: aliceblue;
+  font-family: "Mitr", sans-serif;
+  padding: 32px;
+}
+
+#fototesti {
+  background-image: url(../images/tecnico3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 480px) {
+  .testi {
+    display: block;
+  }
+  .textotesti {
+    color: white;
+    padding: 24px;
+  }
+  #fototesti p {
+    height: 50vh;
+    color: white;
+  }
+}
+@media (min-width: 600px) {
+  .testi {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .textotesti {
+    color: white;
+    padding: 48px;
+  }
+}
+.fotopersona {
+  background-image: url(../images/persona.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fotopersona2 {
+  background-image: url(../images/persona2.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fotopersona3 {
+  background-image: url(../images/persona3.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portada-acercade {
+  background-image: url(../images/supervisor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 500PX;
+}
+
+.cont-acercade {
+  background-color: #363A3E;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.cont-trabajo {
+  padding: 150px 24px 24px;
+  background-color: #363A3E;
+  text-align: center;
+  color: white;
+  margin-bottom: -8 px;
+}
+
+.content-elegirnos {
+  background-color: #363A3E;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 40px 24px;
+}
+
+.contacto {
+  background-color: #363A3E;
+  color: white;
+  text-align: center;
+  padding: 150px 32px 24px;
+}
+
+@media (min-width: 600px) {
+  .contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .title-contact {
+    grid-column: span 2;
+  }
+  .direccion {
+    grid-column: span 2;
+  }
+  .mensaje {
+    grid-column: span 2;
+  }
+  .enviar {
+    grid-column: span 2;
+  }
+}
+.mapa {
+  background-color: #363A3E;
+  color: white;
+  text-align: center;
+}
+
+.card-service {
+  padding: 20px 15px 20px;
+  background-color: rgba(255, 255, 255, 0.055);
+  margin: 0.5rem;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.icono-servicios {
+  background-image: url(../images/icone-de-service-noir.png);
+  background-size: contain;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+}
+
+.card-person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  padding: 24px;
+  color: white;
+  text-align: center;
+  justify-items: center;
+}
+
+.logo-footer {
+  width: 250px;
+  height: 50px;
+  background-image: url(../images/logo\ gytesas\ B.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-row: span 2;
+}
+
+.menufooter {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+  .footer {
+    display: grid;
+    padding: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    color: white;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

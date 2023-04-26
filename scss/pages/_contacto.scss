@@ -1,0 +1,41 @@
+.contacto{
+    background-color: #363A3E;
+    color: white;
+    text-align: center;
+    padding: 150px 32px 24px;
+
+
+}
+
+@media (min-width:600px){
+    .contacto{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 24px;
+
+    }
+
+    .title-contact {
+        grid-column: span 2;
+    }
+
+    .direccion {
+    grid-column: span 2;
+    }
+
+    .mensaje {
+        grid-column: span 2;
+    }
+
+    .enviar{
+        grid-column: span 2;
+    }
+}
+
+.mapa{
+    background-color: #363A3E;
+    color: white;
+    text-align: center;
+
+
+}

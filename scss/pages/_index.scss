@@ -1,0 +1,120 @@
+/**PORTADA**/
+.portada-index {
+    background-image: url(../images/soldando.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+/**banner logo**/
+
+.banner-logo {
+    background-color: $negro;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-horizontal {
+    width: 250px;
+    height: 50px;
+    background-image: url(../images/logo\ gytesas\ B.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.banner-carrusel {
+    height: 800px;
+    background-image: url(../images/tecnico.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testi {
+    background-color: #131414;
+}
+
+.textotesti {
+    color: white;
+}
+
+.titulo-testimonio {
+    font-family: 'Russo One', sans-serif;
+    color: rgb(165, 195, 221);
+    font-size: 2rem;
+    
+}
+
+.testimonio {
+    color: aliceblue;
+    font-family: 'Mitr', sans-serif;
+    padding: 32px;
+
+}
+
+
+#fototesti {
+    background-image: url(../images/tecnico3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width:480px){
+    .testi {
+        display: block;
+    }
+
+    .textotesti{
+        color: white;
+        padding: 24px;
+    }
+
+    #fototesti p {
+        height: 50vh;
+        color: white;
+    }
+
+}
+
+@media (min-width:600px){
+    .testi {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .textotesti{
+        color: white;
+        padding: 48px;
+    }
+}
+
+.fotopersona {
+    background-image: url(../images/persona.jpg );
+    background-size: cover;
+    width: 300px;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fotopersona2 {
+    background-image: url(../images/persona2.jpg );
+    background-size: cover;
+    width: 300px;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fotopersona3 {
+    background-image: url(../images/persona3.jpg );
+    background-size: cover;
+    width: 300px;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+

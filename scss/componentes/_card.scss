@@ -1,0 +1,27 @@
+.card-service {
+    padding: 20px 15px 20px;
+    background-color: rgba(255, 255, 255, 0.055);
+    margin: 0.5rem;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.icono-servicios {
+    background-image: url(../images/icone-de-service-noir.png);
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+}
+
+.card-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+}
