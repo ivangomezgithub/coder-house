@@ -6,6 +6,12 @@
     height: 500PX;
 }
 
+@media (min-with:600px) {
+    .portada-acercade {
+        padding: 0 24px;
+    }
+}
+
 .cont-acercade{
     background-color: #363A3E;  
     color: white; 
