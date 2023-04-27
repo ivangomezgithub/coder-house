@@ -68,18 +68,20 @@ header  {
     text-align: center;
     padding-bottom: 40px ;
     justify-items: center;
-
 }
 
 .titulo-2 {
     font-family: 'Russo One', sans-serif;
     padding: 24px 0 24px;
     font-size: 3rem;
+    
 }
 
 @media (max-width:600px){
     .titulo-2 {
     font-size: 1rem;
     }
+
+
 }
 

@@ -1,13 +1,14 @@
+/**Css Base**/
 @import "./base.scss";
 
-
+/**Css Paginas**/
 @import "./pages/index";
 @import "./pages/acercade";
 @import "./pages/trabajo";
 @import "./pages/elegirnos";
 @import "./pages/contacto";
 
-
+/**Css Componentes**/
 @import "./componentes/navbar";
 @import "./componentes/card";
-@import "./componentes/footer";
+@import "./componentes/footer"; 

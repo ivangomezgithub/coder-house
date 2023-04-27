@@ -1,3 +1,4 @@
+/**Css Base**/
 * {
   margin: 0;
   padding: 0;
@@ -61,6 +62,7 @@ header {
     font-size: 1rem;
   }
 }
+/**Css Paginas**/
 /**PORTADA**/
 .portada-index {
   background-image: url(../images/soldando.jpg);
@@ -171,14 +173,23 @@ header {
   background-repeat: no-repeat;
 }
 
-.portada-acercade {
+.cont-portadaacercade {
+  background-color: #59626A;
+}
+.cont-portadaacercade .portada-acercade {
   background-image: url(../images/supervisor.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   height: 500PX;
+  background-color: #363A3E;
 }
 
+@media (min-width: 600px) {
+  .portada-acercade {
+    margin: 0px 48px;
+  }
+}
 .cont-acercade {
   background-color: #363A3E;
   color: white;
@@ -186,6 +197,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: justify;
   padding: 40px;
 }
 
@@ -239,6 +251,7 @@ header {
   text-align: center;
 }
 
+/**Css Componentes**/
 .card-service {
   padding: 20px 15px 20px;
   background-color: rgba(255, 255, 255, 0.055);

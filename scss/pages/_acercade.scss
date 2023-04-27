@@ -1,14 +1,20 @@
-.portada-acercade {
-    background-image: url(../images/supervisor.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    height: 500PX;
+.cont-portadaacercade{
+    background-color: $secundary;
+
+    .portada-acercade {
+        background-image: url(../images/supervisor.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        height: 500PX;
+        
+        background-color: $principal;
+    }
 }
 
-@media (min-with:600px) {
+@media (min-width:600px) {
     .portada-acercade {
-        padding: 0 24px;
+        margin: 0px 48px;
     }
 }
 
@@ -19,5 +25,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;    
+    text-align: justify;
+    padding: 40px;
 }
