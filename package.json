@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", "watch:scss": "sass --watch ./scss/main.scss ./css/styles.css"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "sass --watch ./scss/main.scss ./css/styles.css"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
 }
